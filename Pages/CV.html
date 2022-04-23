@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="../css/base.html">
+</head>
+<body>
+
+
+
+
+<!-- Menu de Navigation -->
+<nav class="Menu-Nav">
+    <ul class="Menu-Nav-ul">
+        <h1 class="titre"><!-- Get the actual page title -->
+            <script language="javascript">
+            var titre = document.title;
+            document.write(titre);
+            </script><div style="text-align: right;margin-top: -2%">
+            
+            <link rel="stylesheet" href="../css/Switch.css">
+            
+<label id="switch" class="label switch">
+  <div class="toggle">
+    <input onchange="toggleTheme()" id="slider" class="toggle-state" type="checkbox" name="switch" value="check" />
+    <div class="indicator"></div>
+  </div>
+</label>
+
+<script type="text/javascript">
+ // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-dark');
+              document.getElementById('slider').checked = true;
+            }
+        })();
+</script>
+
+</div>
+        </h1>
+
+        <li class="Menu-Principal"><a class="menu-a" href="../Pages/Accueil.html">Accueil</a></li>
+        <li class="Menu-Principal Menu-Principal-deroulant"><a class="menu-a" href="../Pages/Projets.html">Projets</a>
+            <ul class="Sous-Menu">
+                <li><div class="menu-c"><a class="menu-b" href= "../Pages/Projets.html#jump_Projet_1">Bayouu             <a href= "https://runstia.itch.io/bayouu-adventure"><img style="width: 7%" src="../img/itch-io_logo"></a></a></div></li>
+                <li><div class="menu-c"><a class="menu-b" href= "../Pages/Projets.html#jump_Projet_2">Rainy Date         <a href= "https://runstia.itch.io/rainy-date">      <img style="width: 7%" src="../img/itch-io_logo"></a></a></div></li>
+                <li><div class="menu-c"><a class="menu-b" href= "../Pages/Projets.html#jump_Projet_3">Keep YOUR Snow !   <a href= "https://runstia.itch.io/keep-your-snow">  <img style="width: 7%" src="../img/itch-io_logo"></a></a></div></li>
+            </ul>
+        </li>
+        <li class="Menu-Principal"><a class="menu-a" href="../Pages/CV.html">CV</a></li>
+        <li class="Menu-Principal"><a class="menu-a" href="../Pages/Contact.htmlp">Contact</a></li>
+    </ul>
+</nav>  
+
+	<img width= 95% class="CV" src="../img/CV Paysage Dark">
+	<br><br>
+
+
+	<article>
+	    <footer>
+	    	<p>Merci pour le temps que vous accordez à mon portfolio. Portfolio de Jérôme Creton © 2022 Runstia</p>
+	    </footer>
+	</article>
+
+</body>
+</html>
