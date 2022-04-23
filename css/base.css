@@ -1,0 +1,245 @@
+/*Reset CSS
+*{
+	margin: Opx;
+	padding: Opx;
+	font-family: Avenir, sans-serif;
+	color: white;
+}*/
+
+/*Start CSS*/
+.theme-dark {
+	background-color: rgb(26, 26, 26);
+    color: #ffffff;
+        --color-secondary: rgb(38, 38, 38);
+        --color-primary: rgb(26, 26, 26);
+        --font-color: #ffffff;
+}
+.theme-light {
+    background-color: rgb(225, 225, 225);
+    color: #000000;
+        --color-secondary: rgb(200, 200, 200);
+        --color-primary: rgb(225, 225, 225);
+        --font-color: #000000;;
+}
+
+.titre {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* MENU NAVIGATION */
+nav.Menu-Nav {
+    z-index: 1000;
+}
+nav.Menu-Nav ul.Menu-Nav-ul {
+    list-style-type: none;
+	background-color: var(--color-secondary);   
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+nav.Menu-Nav ul.Menu-Nav-ul .Menu-Principal {
+    float: left;
+    width: 25%;
+	text-align: center;
+    position: relative;
+}
+
+nav.Menu-Nav ul.Menu-Nav-ul::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.menu-a{
+    display: block;
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--color-secondary);
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+}
+.Sous-Menu .menu-b{
+    color: var(--font-color);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.Sous-Menu .menu-c{
+    background-color: var(--color-secondary);
+    padding: 10px;
+}
+}
+nav.Menu-Nav .menu-c {
+    display: block;
+	background-color: var(--color-secondary);
+}
+
+nav.Menu-Nav .menu-b:hover {
+    color: MediumOrchid;
+    border-bottom: 2px solid DarkOrchid;
+}
+
+nav.Menu-Nav .menu-a:hover {
+    color: MediumOrchid;
+    border-bottom: 2px solid DarkOrchid;
+}
+
+/*placement des sous menu*/
+.Sous-Menu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);    
+    z-index: 1000;
+}
+
+nav.Menu-Nav > ul.Menu-Nav-ul li:hover .Sous-Menu {
+    display: block;
+}
+
+.Sous-Menu li {
+    list-style: none;
+	text-align: center;
+}
+
+.Menu-Principal-deroulant > .menu-a::after {
+	content:" 🔘";
+	font-size: 12px;
+}
+/*-menu fin-*/
+
+.article {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    z-index: 0;
+}
+/* PAGE CONTACT*/
+.menu_contact {
+    list-style: none;
+    font-size: 20px;
+}
+.li_contact{
+    padding: 9% 5% 5% 0%;
+}
+.social_link{
+    width: 20%;
+    padding: 5% 1% 0% 5%;
+}
+
+nav.article ul.menu_contact {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    position: relative; 
+}
+
+nav.article ul.menu_contact .social_link {
+    float: left;
+    position: relative;
+    margin-left: 10%;
+}
+
+nav.article ul.menu_contact .li_contact {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    margin-left: -10%;
+}
+
+nav.article ul.menu_contact .map {
+    float: left;
+    text-align: left;
+    position: relative;
+}
+
+    #img_insta {
+        width: 19.5%;
+    }
+
+    #img_twitter {
+        width: 20.5%;
+    }
+
+    #img_discord {
+        margin-left: -7%;
+        width: 34%;
+    }
+
+    #img_itchio {
+        width: 20%;
+    }
+
+/*-Contact fin-*/
+
+.Presentation {
+    text-align: left;
+    margin-right: 1000px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.pdp {
+    position: relative;
+    margin-top: -150px;
+    margin-left: 1200px;
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    position: relative;
+}
+
+
+/*BACK ARROW*/
+.arrow{
+    width: 6vmin;
+    height: 6vmin;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: rotate(-45deg);
+}
+.arrow:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+}
+.arrow:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .8vmin 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transform-origin: 100% 0;
+    transition:.2s ease;
+    }
+.arrow:hover::after{
+    transform: rotate(45deg);
+    border-color: DarkOrchid;
+    height: 120%;
+}
+.arrow:hover:before{
+    transform: rotate(360deg);
+}
+.arrow:hover::before {
+    border-color: DarkOrchid;
+    transform: scale(.8);
+}
+/*FIN ARROW*/

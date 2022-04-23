@@ -1,0 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<article>
+	    <footer>
+	    	<p>Merci pour le temps que vous accordez à mon portfolio. Portfolio de Jérôme Creton © 2022 Runstia</p>
+	    </footer>
+	</article>
+</body>
